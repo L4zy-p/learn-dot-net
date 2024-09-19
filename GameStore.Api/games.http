@@ -1,0 +1,33 @@
+GET http://localhost:5078/games
+
+###
+
+GET http://localhost:5078/games/4
+
+###
+
+POST http://localhost:5078/games
+Content-Type: application/json
+
+{
+    "name": "Minecraft",
+    "genre": "Kids and Family",
+    "price": 19.99,
+    "releaseDate": "2011-11-18"
+}
+
+###
+
+PUT http://localhost:5078/games/1
+Content-Type: application/json
+
+{
+    "name": "Street Fighter II turbo",
+    "genre": "Kids and Family",
+    "price": 19.89,
+    "releaseDate": "2011-11-18"
+}
+
+###
+
+DELETE http://localhost:5078/games/2
